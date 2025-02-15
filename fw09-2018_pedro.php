@@ -1,12 +1,4 @@
 <html>
-<!-- FW09-2018 - SEGMA6 <<>> Wagner Costa (1680971621013)
-
-Utitlizando o exemplo dado em aula, crie um formulário em PHP
-deverá contar com duas caixas de texto n1 e n2
-deverá contar com 5 botões (somar, multiplicar, subtrair, dividir,taboada)
-coletar os dados do formulário
-realizar a operação matemática especifica
- -->
 
 	<body>
 		<form method="post" action="tabuada2.php">
