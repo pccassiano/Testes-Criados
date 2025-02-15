@@ -1,0 +1,70 @@
+<html>
+	<body>
+		Nome: <input type="text" id="nome"><br>  
+		Senha: <input type="password" id="senha"><br>
+		Confirma: <input type="password" id="Confirma"><br>
+		idade: <input type="text" id="idade"><br>
+		email: <input type="text" id="email"><br>
+		<input type="button" value="enviar" 
+			onClick="validar();">
+	</body>
+</html>	
+<script language="javascript">
+	function validar(){
+		if(nome.value == ""){
+			alert("nome vazio !");
+			nome.focus();
+			return false;
+		}
+		
+		if(nome.value.length < 3){
+			alert("nome invalido !");
+			nome.focus();
+			return false;
+		}
+		
+		if(senha.value.length < 6){
+			alert("Informe uma senha com almenos 6 digitos");
+			senha.focus();
+			return false;
+		}
+		if(senha.value != Confirma.value){
+			alert("senha e confirmação não conferem");
+			Confirma.focus();
+			return false;
+		}
+		//isNaN = is not a number 
+		if(isNaN(idade.value) || idade.value==""){
+			alert("idade não esta correta");
+			idade.focus();
+			return false;
+		}
+		var idadeAux = parseInt(idade.value);		
+		if(idadeAux <18 || idadeAux > 65){
+			alert("idade deve estar entre 18 e 65");
+			idade.focus();
+			return false;		
+		}
+          0123456789   	
+		//ana.pa@a.com
+		if(email.value.length < 7){
+			alert("email invalido !");
+			email.focus();
+			return false;
+		}
+		var pos  = email.value.indexOf("@");
+		var pos2 = email.value.lastIndexOf(".");
+		
+		alert(pos);
+		alert(pos2);
+				
+		if(pos < 1 || pos2 <= pos){
+			alert("email invalido !");
+			email.focus();
+			return false;
+		}
+		alert("tudo ok");
+	}
+	
+</script>
+		

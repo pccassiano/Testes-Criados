@@ -1,0 +1,28 @@
+body
+	{
+	background-color: black;
+	color: white;
+	font-family: times;
+	}
+
+input, select, textarea
+	{
+	background-color: black;
+	color: green;
+	margin: 5px;
+	border: solid 1px white;	
+	}
+
+#nome
+	{
+	background-color: gray;
+	color: orange;
+	font-weight: bolder;
+	}
+	
+.titulo
+	{
+	color: red;
+	font-size:32px;
+	font-weight: bolder;
+	}

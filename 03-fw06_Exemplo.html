@@ -1,0 +1,70 @@
+<html>
+	<body>
+	nome:
+	<input type="text" id="nome" /><br/>
+	senha:
+	<input type="password" id="senha" /><br/>
+	confirmação:
+	<input type="password" id="senha2" /><br/>
+	email:
+	<input type="text" id="email" /><br/>
+	idade:
+	<input type="text" id="idade" /><br/>
+	<input type="button" value="Enviar" 
+		onclick="validar()" />	
+	</body>
+</html>	
+<script lang="javascript">
+	function validar(){
+		//length - contar a qtd de caracteres
+		if(nome.value.length < 3){
+			alert("Informe seu nome !");
+			nome.focus();
+			return false;
+		}
+		//isNaN-retorna True caso alfanumerico
+		//isNaN-retorna False caso numerico
+		if(senha.value.length < 6 || 
+			! isNaN(senha.value) ){
+			alert("Informe uma senha com almenos 6 caracteres !");
+			senha.focus();
+			return false;
+		}
+		if(senha.value != senha2.value)
+		{
+			alert("confirmação e senha precisam ser iguais !");
+			senha.value = "";
+			senha2.value = "";
+			senha.focus();
+			return false;
+		}
+		// norton.glaser@fatecco  
+		//indexOf-procura a posicao do caracter
+		//lastIndexOf-posicao da ultima ocorrencia
+		if(email.value.lengh < 6 ||
+		   email.value.indexOf("@") < 1 || 	
+		   email.value.lastIndexOf(".") < email.value.indexOf("@")
+		)
+		{
+			alert("informe um email valido!");
+			email.focus();
+			return false;
+		}
+		if(idade.value==""  ||
+		   isNaN(idade.value) ||
+		   parseInt(idade.value) <18  ||
+		   parseInt(idade.value) >65 )
+		{
+		alert("Informe uma idade entre 18 e 65");
+		idade.focus();
+		return false;
+		}		  
+		   
+		
+		
+		alert("tudo certo");
+	}
+</script>
+
+
+

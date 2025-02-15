@@ -1,0 +1,38 @@
+<html>
+<body>
+nome:<input type="text" id="nome" /><br/>
+senha:<input type="password" id="p1" /><br/>
+confirma:<input type="password" id="p2" /><br/>
+email:<input type="text" id="email" /><br/>
+<input type="button" value="Enviar" onclick="validar();" />
+</body>
+</html>
+<script lang="javascript">
+function validar(){
+	if(nome.value.length<3){
+		alert("informe o seu nome");
+		nome.focus();
+		return false;
+	}
+	if(p1.value.length < 6 || 
+		isNaN(p1.value)==false){
+		alert("informe uma senha com almenos 6 caracteres");
+		p1.focus();
+		return false;
+	}
+	if(p1.value != p2.value){
+		alert("senha e confirmação estão diferentes");
+		p2.focus();
+		return false;
+	}
+	// a@a.co 
+	if(email.value.length < 6 ||
+	  email.value.indexOf("@") <1 || 
+	  email.value.indexOf(".") <1 ){
+		alert("Informe um email valido!");
+		email.focus();
+		return false;
+	}
+	alert("tudo ok");
+}
+</script>

@@ -1,0 +1,72 @@
+<html>
+<!--
+FW05-2018 - SEGMA6 <<>> Wagner Costa (1680971621013) 
+
+Atividade
+assunto: fw05-2018
+
+Utilizando o exemplo realizado em sala de aula crie as funções javascript para as operações de : multiplicação, divisão, subtração e soma.
+Verifique e evite a divisão por zero.
+ -->
+<head>
+	<title>Calculando...</title>
+</head>
+ 
+	<body>
+		<input type="text" id="n1"> 
+		<input type="text" id="n2">
+		
+		<p>Selecione a operação de que deseja executar:</p>
+		
+		<input type="button" value="somar" onclick="somar();">
+		<input type="button" value="subtrair" onclick="subtrair();">
+		<input type="button" value="multiplicar" onclick="multiplicar();">
+		<input type="button" value="dividir" onclick="dividir();">
+		
+		<br> <br>
+		
+		<input type="button" value="Atualizar Página" onClick="window.location.href=window.location.href">
+		
+	</body>
+</html>
+	
+<script language="javascript">
+	function somar(){
+		//cparseFloat - converte um texto em decimal
+		var a = parseFloat(n1.value);
+		var b = parseFloat(n2.value);
+		var c = a + b;
+		alert(c);
+	}
+</script>
+	
+<script language="javascript">
+	function subtrair(){
+		//cparseFloat - converte um texto em decimal
+		var a = parseFloat(n1.value);
+		var b = parseFloat(n2.value);
+		var c = a - b;
+		alert(c);
+	}
+</script>
+	
+<script language="javascript">
+	function multiplicar(){
+		//cparseFloat - converte um texto em decimal
+		var a = parseFloat(n1.value);
+		var b = parseFloat(n2.value);
+		var c = a * b;
+		alert(c);
+	}
+</script>
+	
+<script language="javascript">
+	function dividir(){
+		//cparseFloat - converte um texto em decimal
+		var a = parseFloat(n1.value);
+		var b = parseFloat(n2.value);
+		var c = a / b;
+		alert(c);
+		}
+	}
+</script>

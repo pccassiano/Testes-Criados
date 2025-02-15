@@ -1,0 +1,25 @@
+body {
+	font-family: arial;
+	font-size: 10px;
+	color: gray;
+}
+input, select, textarea{
+	background-color: yellow;
+	color: black;
+}
+#email {
+	background-color: red;
+	color: white;
+}
+.destaque{
+	background-color: orange;
+	color: black;	
+}
+p{
+	color: blue;
+	text-align:center;
+}
+#texto{
+	color: white;
+	background-color:pink;
+}

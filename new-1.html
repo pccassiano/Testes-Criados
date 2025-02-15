@@ -1,0 +1,15 @@
+<script lang="javascript">
+function validat(){ 
+detalhes.value = detalhes.value.replace("<","");
+detalhes.value = detalhes.value.replace(">","");
+
+if(detalhes.value.indexOf("<script") >= 0 || 
+detalhes.value.indexOf("location.") >= 0 ||
+detalhes.value.indexOf("window.open") >= 0 ||
+detalhes.value.indexOf(".open") >= 0 )
+{
+	detalhes.value = "Conteudo invalido";
+}
+
+}
+</script>

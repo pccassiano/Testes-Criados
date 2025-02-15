@@ -1,0 +1,50 @@
+<html>
+	<body>
+		<p>
+		email: <input type="text" id="email"><br>
+		senha: <input type="password" id="senha"><br>
+		<input type="button" value="enviar"
+			onclick="validar();">
+		</p>
+		
+		<p>
+		Obs: <textarea id="msg"></textarea>
+		<input type="button" value="enviar 2" 
+		onclick="validar2()">
+		</p>
+	</body>
+</html>
+
+<script lang="javascript">
+function validar(){
+	if(email.value.length < 7 || 
+		email.value.length > 50){
+		alert("email invalido !");
+		return false;
+	}
+	
+	if(senha.value.length < 4 || 
+		senha.value.length > 20){
+		alert("senha invalido !");
+		return false;
+	}
+	
+	if(email.value.indexOf(" ")>=0 ||
+		email.value.indexOf("=")>=0 ){
+		alert("Existem caracteres invalidos !");
+		return false;
+	}
+}
+
+function validar2(){
+	if(msg.value.indexOf("</") >=0 ||
+		msg.value.indexOf("<script lang") >=0 ||
+		msg.value.indexOf("<iframe ") >=0 ){
+			msg.value = "";
+			alert("vc digitou caracteres invalidos!");
+			return false;
+		}
+		
+}
+
+</script>

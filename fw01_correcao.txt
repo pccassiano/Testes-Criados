@@ -1,0 +1,25 @@
+1- O que define um sistema baseado em web e quais as suas vantagens?
+R. 
+Sistema e definido por sua topologia, preciso ter elemento: Cliente, Servidor de aplicação e Internet como meio de comunicação
+-Disponibilidade
+-Portabilidade
+-Segurança
+-Configuração
+-Integração
+
+2- Descreva a arquitetura de um sistema baseado em web
+1-Cliente faz requisição via navegador
+2-provedor identifica localização do servidor de aplicação
+3-Servidor de aplicação, processa requisição
+4-Caso nescessario consulta banco de dados
+5-envia resposta HTML usando o HTTP
+6-E feito o download do HTML no cliente
+7-Navegador exibe o conteudo
+
+3- O que é um servidor de aplicação e quais as suas funcionalidades?
+Servidor de aplicação pode ser considerado tanto HW ou SW tem as funcionalidade:
+-Configuração de aplicação
+-gerenciamento de conexões
+-processamento de requisição
+-configuração de segurança
+-armazenamento dos arquivos

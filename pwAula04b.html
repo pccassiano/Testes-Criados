@@ -1,0 +1,39 @@
+<html>
+	<body>
+		nome: <input type="text" id="nome"><br>
+		senha: <input type="password" id="senha"><br>
+		confirma: <input type="password" id="senha2"><br>
+		email: <input type="text" id="email"><br>
+		<input type="button" value="Enviar" 
+			onclick="valida();">
+	</body>
+</html>	
+<script language="javascript">
+	function valida(){
+		if(nome.value == ""){
+			alert("Informe o seu nome !");
+			nome.focus();
+			return false;
+		}
+		if(senha.value.length < 6){
+			alert("Informe uma senha de almenos 6 digitos");
+			senha.focus();
+			return false;
+		}
+		if(senha.value != senha2.value){
+			alert("senha e confirmação são diferentes!");
+			senha.focus();
+			return false;
+		}
+		//a@a.co
+		//indexOf traz a posição de um caracter na string
+		if(email.value.length < 6 || 
+			email.value.indexOf("@") < 0 || 
+			email.value.indexOf(".") < 0 ){
+			alert("Email invalido !");
+			email.focus();
+			return false;
+		}
+		alert("tudo ok");
+	}
+</script>

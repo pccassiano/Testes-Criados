@@ -1,0 +1,45 @@
+Microsoft Windows [versão 10.0.16299.64]
+(c) 2017 Microsoft Corporation. Todos os direitos reservados.
+
+C:\WINDOWS\system32>cd \xampp\mysql\bin
+
+C:\xampp\mysql\bin>mysql -h localhost -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 2
+Server version: 10.1.28-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2017, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> create database bdweb;
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [(none)]> use bdweb;
+Database changed
+MariaDB [bdweb]> create table chamado(
+    -> codigo int primary key auto_increment,
+    -> nome varchar(100),
+    -> email varchar(100),
+    -> titulo varchar(100),
+    -> descritivo varchar(4000),
+    -> prioridade int);
+Query OK, 0 rows affected (0.04 sec)
+
+MariaDB [bdweb]> describe chamado;
++------------+---------------+------+-----+---------+----------------+
+| Field      | Type          | Null | Key | Default | Extra          |
++------------+---------------+------+-----+---------+----------------+
+| codigo     | int(11)       | NO   | PRI | NULL    | auto_increment |
+| nome       | varchar(100)  | YES  |     | NULL    |                |
+| email      | varchar(100)  | YES  |     | NULL    |                |
+| titulo     | varchar(100)  | YES  |     | NULL    |                |
+| descritivo | varchar(4000) | YES  |     | NULL    |                |
+| prioridade | int(11)       | YES  |     | NULL    |                |
++------------+---------------+------+-----+---------+----------------+
+6 rows in set (0.01 sec)
+
+MariaDB [bdweb]> exit;
+Bye
+
+C:\xampp\mysql\bin>

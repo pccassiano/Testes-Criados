@@ -1,0 +1,36 @@
+﻿<html>
+	<body>
+		nome: <input type="text" id="nome"><br>
+		senha:<input type="password" id="senha"><br>		
+	confirmação:
+	<input type="password" id="senha2"><br>
+	email: <input type="text" id="email"><br>
+	<input type="button" value="enviar"
+	 onclick="validar()">
+	</body>
+</html>	
+<script lang="javascript">
+	function validar(){
+		if(nome.value == ""){
+			alert("informe o seu nome!");
+			return false;
+		}
+		if(senha.value.length <6){
+			alert("informe uma senha com 6 caracteres");
+			return false;
+		}
+		if(senha.value != senha2.value){
+			alert("senha e confirmação diferentes!");
+			return false;
+		}
+		// A@B.CO
+		if(email.value.length <6 ||
+			email.value.indexOf("@") < 1 ||
+			email.value.indexOf(".") < 0) 
+		{
+			alert("email invalido, redigite !");
+			return false;
+		}
+		alert("tudo ok");
+	}
+</script>

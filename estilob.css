@@ -1,0 +1,19 @@
+#corpo{
+	width: 800px;
+	height: 600px;
+	border: thin solid gray;
+}
+#corpo #topo{
+	height:100px;
+	background: green;	
+}
+#corpo #topo h1{
+	Font-family:arial;
+	Font-size:18px;
+	color: black;
+}
+h1 {
+	Font-family:tahoma;
+	Font-size:24px;
+	color: orange;
+}

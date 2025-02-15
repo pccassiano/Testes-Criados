@@ -1,0 +1,63 @@
+body
+	{
+	background-color: lavender;
+	font-family: arial;
+	font-size: 12px;
+	color: blue;
+	background
+	}
+	
+input, select, textarea
+	{
+	background-color: whitesmoke;
+	color: green;
+	}
+	
+#nome 
+	{
+	background-color: black;
+	color: yelolow;
+	}
+	
+#email 
+	{
+	background-color: black;
+	color: yellow;
+	}
+
+#senha 
+	{
+	background-color: red;
+	color: white;
+	}
+	
+.destaque
+	{
+	font-family: new courier;
+	font-style: bold;
+	font-size: 20px;
+	text-align: left;
+	color: orange;	
+	}
+
+h1
+	{
+	font-family: new courier;
+	font-size: 30px;
+	font-style: italic;
+	text-align:center;
+	color: 921010;
+	}
+	
+p
+	{
+	fonte: verdana;
+	color: blue;
+	text-align:center;
+	}
+	
+#texto
+	{
+	color: white;
+	background-color:pink;
+	}

@@ -1,0 +1,24 @@
+<html>
+	<body>
+		<input type="text" id="n1"> <br>
+		<input type="text" id="n2"> <br>
+		<input type="button" value="somar" 
+				onclick="somar();">
+	</body>
+</html>
+
+<script language="javascript">
+	function somar(){
+		//parseFloat converte para decimal
+		//parseInt converte para inteiro
+		if(isNaN(n1.value) || isNaN(n2.value))
+		{
+			alert("Informe somente numeros!");
+		} else {
+			var a = parseFloat(n1.value);
+			var b = parseFloat(n2.value);	
+			var d = a + b;
+			alert(d); 
+		}
+	}
+</script>	
