@@ -1,7 +1,0 @@
-Wagner da Costa Alves de Jesus
-RA 1680971621013
-SEGMA6 - N1 [ 2018-04-13 ]
-
-1)  Dentre outras motivações, é válido ressaltar que a implementação de um sistema baseado em Web  oferece maior disponibilidade, integração com diversos sistemas e plataformas e torná-lo acessível a partir de locais diversos, requerendo somente acesso à internet.
-
-2) Dinâmicas são páginas que podem ser alteradas atraves de outro arquivo comntendo sua formatação, neste caso o CSS. Desta forma não é necessário alteraar cada item da página, pode-se alterar as TAG´s identificadas e toda a páginas (com referencia a TAG em questão) será alterada dinamicamente. As páginas Estáticas não permitem este tipo de alteração, cada mudança deve ser feita diretamente no código da página.
